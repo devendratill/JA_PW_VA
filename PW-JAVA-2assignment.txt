@@ -1,0 +1,177 @@
+                                                                           _________ PW-SKILLS-JAVA-2__________
+
+1.WHAT ARE THE CONDITIONAL OPERATORS IN JAVA ?
+->>
+In Java, conditional operators check the condition and decides the desired result on the basis of both conditions.
+ In this section, we will discuss the conditional operator in Java.They are used when a condition comprises more than one boolean expression. 
+For instance/ if we want to print a number only if it is greater than 2 and less than 5/ then we will use conditional operators to combine the
+2 expressions. We have 3 types of conditional operators - logical-and/ logical-or and ternary operator.
+
+
+
+        Operator           		  	Symbol
+Conditional or Logical AND			  &&
+Conditional or Logical OR			  ||
+Ternary Operator	       			  ?:
+
+
+logical AND
+The operator is applied between two Boolean expressions. It is denoted by the two AND operators (&&). It returns true if and only if both expressions are true, else returns false.
+
+Expression1	Expression2	Expression1 && Expression2
+True		False   		False
+False		True			False
+False		False			False
+True		True			True
+
+
+logical OR
+The operator is applied between two Boolean expressions. It is denoted by the two OR operator (||). It returns true if any of the expression is true, else returns false.
+Advertisement
+
+
+Expression1	Expression2	Expression1 || Expression2
+True		True			True
+True		False			True
+False		True			True
+False		False			False
+Let's create a Java program and use the conditional operator.
+
+
+Ternary Operator
+The meaning of ternary is composed of three parts. The ternary operator (? :) consists of three operands. It is used to evaluate Boolean expressions. The operator decides which value will be assigned to the variable. It is the only conditional operator that accepts three operands. It can be used instead of the if-else statement. It makes the code much more easy, readable, and shorter.
+
+Note: Every code using an if-else statement cannot be replaced with a ternary operator.
+Syntax:
+
+variable = (condition) ? expression1 : expression2  
+The above statement states that if the condition returns true, expression1 gets executed, else the expression2 gets executed and the final result stored in a variable.
+       
+
+2.WHAT ARE THE TYPES OF OPERATORS BASED ON THE NUMBER OF OPERANDS?
+->>
+There are three types of operators in java based on numbers operands. they are 
+i)Unary operators.
+ii)Binary operators.
+iii)Ternary operators.
+
+
+3.What is the use of Switch case in java programming ?
+->>
+The switch statement is a multi-way branch statement. In simple words, the Java switch statement executes one statement from multiple conditions. 
+It is like an if-else-if ladder statement. It provides an easy way to dispatch execution to different parts of code based on the value of the expression.
+Basically, the expression can be a byte, short, char, or int primitive data types. It basically tests the equality of variables against multiple values.
+
+Note: Java switch expression must be of byte, short, int, long(with its Wrapper type), enums and string. Beginning with JDK7,
+ it also works with enumerated types (Enums in java), the String class, and Wrapper classes.
+
+Some Important Rules for Switch Statements
+1.There can be any number of cases just imposing condition check but remember duplicate case/s values are not allowed.
+2.The value for a case must be of the same data type as the variable in the switch.
+3.The value for a case must be constant or literal. Variables are not allowed.
+4.The break statement is used inside the switch to terminate a statement sequence.
+5.The break statement is optional. If omitted, execution will continue on into the next case.
+6.The default statement is optional and can appear anywhere inside the switch block. In case, if it is not at the end, 
+then a break statement must be kept after the default statement to omit the execution of the next case statement.
+
+Example:
+class GFG {
+    public static void main(String[] args)
+    {
+        int i = 5;
+        switch (i) {
+        default:
+            System.out.println("Default");
+        case 1:
+            System.out.println(1);
+            break;
+        case 2:
+            System.out.println(2);
+        case 3:
+            System.out.println(3);
+        }
+    }
+}
+
+
+
+4.WHAT ARE THE PRIORITY LEVELS OF ARITHMATIC OPERATION IN JAVA?
+->>
+There are two priority levels of arithmatic operations in java.they are follows
+i)High priority * / %
+ii)Low priority - + 
+
+
+
+5.WHAT ARE THE CONDITIONAL STATEMENTS AND USE OF CONDITIONAL STATEMENTES IN JAVA ?
+->>
+i)if to specify a block of code to be executed, if a specified condition is true
+ii)else to specify a block of code to be executed , if a same condition is false 
+iii)else if to specify a new condition to test, if the first condition is false
+iv)switch to specify many alternative block of code to be executed
+
+
+6.WHAT IS THE SYNTAX OF if else STATEMENT ?
+->>
+public class IfElseExample {  
+public static void main(String[] args) {  
+
+    //defining a variable
+  
+    int number=13;  
+    //Check if the number is divisible by 2 or not  
+    if(number%2==0){  
+        System.out.println("even number");   }
+else{  
+        System.out.println("odd number");  
+    }  
+}  
+
+
+7.WHAT ARE THE 3 TYPES OF ITERATIVE STATEMENTS IN JAVA?
+->>
+There are three types of itretive statements in java :
+1.for loop
+2.while loop
+3.do while loop
+
+8.WRITE THE DIFFERENCE BETWEEN FOR LOOP AND DO WHILE LOOP?
+->>
+
+
+			For loop										Do-While loop
+	Statement(s) is executed once the condition is checked.						Condition is checked after the statement(s) is executed.
+	It might be that statement(s) gets executed zero times.						Statement(s) is executed at least once.
+	For the single statement, bracket is not compulsory.						Brackets are always compulsory.
+	Initialization may be outside or in condition box.						Initialization may be outside or within the loop.
+	for loop is entry controlled loop.								do-while is exit controlled loop.
+	for ( init ; condition ; iteration
+	{ statement (s); }							 				do { statement(s); }
+		while (condition);
+
+
+9.WRITE A PROGRAM TO PRINT NUMBERS FROM 1 TO 10?
+->>
+class NumberExcept
+{
+            public static void main(String args[] )
+            {
+                        int i;
+                        for(i=1;i<=10;i++)
+                        {
+                                    if(i==5) continue;
+                                    System.out.print(i +" ");
+                        }
+            }
+}
+
+
+End.....
+
+
+
+
+
+  
+
+
