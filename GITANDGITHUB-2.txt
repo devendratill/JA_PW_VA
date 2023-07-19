@@ -1,0 +1,39 @@
+                                                                       ___________GIT AND GITHUB______________
+
+
+
+1.HOW TO CHECK IF GIT IS AVAILABLE ON YOUR SYSTEM?
+->>
+git --version.
+
+2.HOW TO INITIALIZE A NEW GIT REPOSITORY?
+->>
+git init project
+cd project
+
+3.HOW TO TELL GIT ABOUT YOUR NAME AND EMAIL?
+->>
+git config --global user.name "<your name>"
+git config --global user.email"<your email>"
+
+4.HOW TO ADD A FILE TO THE STAGING AREA?
+->>
+git add <file>
+
+5.HOW TO REMOVE A FILE FROM STAGING AREA?
+->>
+git reset HEAD --<file>
+
+6.HOW TO MAKE A COMMIT ?
+->>
+git commit -m "commit message".
+
+7.HOW TO SEND YOUR CHANGES TO REMOTE REPOSITORY?
+->>
+git push
+
+8.WHAT IS DIFFERENCE BETWEEN CLONE AND PULL?
+->>
+1.The clone command in git is used when you want to download an existing git repository to your local 
+computer.
+2.git pull when you want to make changes or update done by another developer /team member on a git repository, you have to use git pull. 
