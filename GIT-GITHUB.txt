@@ -1,0 +1,56 @@
+						___________GIT & GITHUB____________
+
+
+1.WHAT IS GIT ?
+->>
+Git is a version control system for tracking changes in computer files and is used to help coordinate work 
+among several people on a people while tracking progress over time.in other words, it's tool that facilitates
+source code management in software development.
+git favours both programmers and non-technical users by keeping track of their project files . it enable 
+multiple users to work together and handles large projects efficiently.
+
+2.WHAT DO YOU UNDERSTAND BY THE TERM 'VERSION CONTROL SYSTEM'?
+->>
+In an order to invoke a specific version later, if necessary, a version control system(VCS)keeps track of all the
+changes made to a file or group of data.
+this make sure that everyone in the team is using the most recent version of the file .
+
+3.WHAT IS GITHUB?
+->>
+Github is uses git to offer internet hosting for version control and software development.
+
+4.MENTION SOME POPULAR GIT HOSTING SERVICES?
+->>
+1.GITHUB
+2.SOURCEFOURGE 
+3.GITLAB
+4.BITBUCKET
+
+5.DIFFERENT TYPES OF VERSION CONTROL SYSTEM?
+->>
+1.Local Version Control Systems: It is one of the simplest forms and has a database that kept all the changes to files under revision control. RCS is one of the most common VCS tools. It keeps patch sets (differences between files) in a special format on disk. By adding up all the patches it can then re-create what any file looked like at any point in time. 
+
+2.Centralized Version Control Systems: Centralized version control systems contain just one repository globally and every user need to commit for reflecting one’s changes in the repository. It is possible for others to see your changes by updating. 
+
+3.Distributed Version Control Systems: Distributed version control systems contain multiple repositories. Each user has their own repository and working copy. Just committing your changes will not give others access to your changes. This is because commit will reflect those changes in your local repository and you need to push them in order to make them visible on the central repository. Similarly, When you update, you do not get others’ changes unless you have first pulled those changes into your repository. 
+
+
+6.WHAT BENEFIT'S COME WITH USING GIT?
+->>
+1.Data replication and redundancy are both possible.
+2.It is a service with high availability.
+3.there can only be one directory per repository.
+4.Excellent network and disc performance are achieved.
+5.on any project,collaboration is very simple .
+
+7.WHAT IS GIT REPOSITORY?
+->>
+The term "Git repository" describe the location where all git files are kept.
+ either the local repository or the remote repository may be used to store these files.
+
+8.HOW CAN YOU INTIALIZE A REPOSITORY IN GIT?
+->>
+The git init command must be used to intialise an empty repository to a directory in Git . following this cammand ,
+a hidden .git folder will become visible .
+
+ 
