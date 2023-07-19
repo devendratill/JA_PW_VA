@@ -1,0 +1,81 @@
+                                                               ________________JAVA OBJECTS AND METHODS________________
+
+
+1.HOW TO CREATE AN OBJECT IN JAVA?
+->>
+
+The object is a basic building block of an OOPs language. In Java, we cannot execute any program without creating an object. There is various way to create an object in Java that we will discuss in this section, and also learn how to create an object in Java.
+
+Java provides five ways to create an object.
+
+Using new Keyword
+Using clone() method
+Using newInstance() method of the Class class
+Using newInstance() method of the Constructor class
+Using Deserialization
+
+Using new Keyword
+Using the new keyword is the most popular way to create an object or instance of the class. When we create an instance of the class by using the new keyword, it allocates memory (heap) for the newly created object and also returns the reference of that object to that memory. The new keyword is also used to create an array. The syntax for creating an object is:
+ClassName object = new ClassName();  
+
+2.WHAT IS THE USE OF A new KEYWORD IN JAVA ?
+->>
+THE "new" KEYWORD IN JAVA IS USED TO CREATE AN INSTANCE OF AN OBJECT . IT ALLOCATES MEMORY TO AN OBJECT AND RETURNS A REFRENCE TO THE OBJECT CREATED. IT IS USED WITH A CONSTRUCTOR TO CREATE AN OBJECT.
+
+3.WHAT ARE THE DIFFERENT TYPES OF VARIABLE IN JAVA?
+->>
+I.Static variable 
+II.Instance variable
+III.Local variable
+
+4.WHAT IS THE DIFFERENCE BETWEEN INSTANCE VARIABLE AND LOCAL VARIABLE ?
+->>
+
+                 Instance Variable                                                                                                                              Local Variable 
+                                                                                                                                                                              
+1.They are defined in class but outside the body of methods.  
+               	                   								1.They are defined as a type of variable declared within programming blocks or subroutines. 
+2.These variables are created when an object is instantiated 
+and are accessible to all constructors, methods, or blocks in class. 									2.These variables are created when a block, method o
+									  	                                                        constructor is started and the variable will be 
+                                                                                                                                        destroyed once it exits the block, method, or 
+                                                                                                                                        constructor.
+
+
+3.These variables are destroyed when the object is destroyed.
+  							                                                         3.These variables are destroyed when the constructor or method is exited.
+4.It can be accessed throughout the class.
+  									                                             4.Its access is limited to the method in which it is declared.
+
+5.They are used to reserving memory for data that the class 							5.They are used to decreasing dependencies between components I.e., the   
+needs and that too for the lifetime of the object.								complexity of code is decreased.
+6.These variables are given a default value if it is not assigned by code.          	         6.These variables do not always have some value, so there must be a value assigned by code.
+7.It is not compulsory to initialize instance variables before use.  	                                      7.It is important to initialize local variables before use.
+8.It includes access modifiers such as private, public, protected, etc.  	                       8.It does not include any access modifiers such as private, public, protected, etc. 
+
+
+
+
+5.IN WHICH AREA MEMORY IS ALLOCATED FOR INSTANCE VARISBLE AND LOCAL VARIABLE ?
+->>
+Instance variables are allocated in the heap and local variable are allocated in the stack.
+
+
+6.WHAT IS METHOD OVERLOADING ?
+->>
+Method overloading in java is a feature that allows a class to have multiple methods with the same name 
+but different parameters . the java compiler distinguishes these methods by the number,type,and order of 
+parameters. overloading is used to provide multiple ways to call a method for different use cases,making 
+code more readable and reusable.
+
+
+
+
+
+
+
+
+
+
+
+                             
