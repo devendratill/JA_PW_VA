@@ -1,0 +1,99 @@
+                                                                  _________________ARRAY IN JAVA____________________
+
+
+
+1.What is the default value of Array for different data types?
+->>
+S.No.	Datatype			 Default Value
+1	boolean	           		    false
+2	int	            	 	      0
+3	double	           	 	     0.0
+4	String	           		     null
+5	User-Defined Type		     null
+
+2.Can you pass the negative number in Array size?
+->>
+No, you cannot use a negative integer as size, the size of an array represents the number of elements in it,
+ –ve number of elements in an array makes no sense. if you pass the negative value to the Array compiler gives
+you a error.
+
+3.where does Array stored in JVM memory?
+->>
+Array is an object in java.so' Array is stored in the heap memory of JVM.
+
+4.What are the disadvantages of Array?
+->>
+Fixed size: Arrays have a fixed size that is determined at the time of creation.
+This means that if the size of the array needs to be increased, a new array must be created and the data must
+be copied from the old array to the new array, which can be time-consuming and memory-intensive.
+
+Memory allocation issues: Allocating a large array can be problematic, particularly in systems with limited memory.
+If the size of the array is too large, the system may run out of memory, which can cause the program to crash.
+
+5.What is an Anonymous Array in Java ? give an example?
+->>
+Properties of Anonymous Arrays:
+
+1.We can create an array without a name. Such types of nameless arrays are called anonymous arrays.
+2.The main purpose of an anonymous array is just for instant use (just for one-time usage).
+3.An anonymous array is passed as an argument of a method.
+
+Example-
+class Test {
+    public static void main(String[] args)
+    {
+          // anonymous array
+          sum(new int[]{ 1, 2, 3 });
+    }
+   
+    public static void sum(int[] a)
+    {
+        int total = 0;
+ 
+        // using for-each loop
+        for (int i : a)
+            total = total + i;
+         
+        System.out.println("The sum is: " + total);
+    }
+}
+
+6.What are the different ways to traverse an Array in java ?
+->>
+1.Using for loop.
+2.Using for each loop.
+
+7.What is the differnce between length and length() method give an Examples?
+->>
+length:
+An array is an object that holds a fixed number of values of the same type.
+the length variable in an array returns the length of an array i.e a number of elements 
+stored in an array .
+once arrays are intialized,its length cannot be changed , so the length variable can directly be used 
+to get the length of an array. the length variable is used only for an array.
+Example:
+public class Test{
+        public static void main(String args[]){
+int array[]={1,2,3,4,5,6,7};
+System.out.println("Length of an array is :" +array.length);
+ }
+}
+
+//output:length of an array is 7:
+
+length()
+The length() method is static method of string class.
+The length() returns the legal of a string object i.e the number of characters stored in an object.
+String class uses this method because the length of a string can be modified using the various operations on 
+an object.
+The string class internally uses a char[] array that it does not expose to the outside world.
+Example:
+public class Test{
+          public static void main(String args[]){
+String str="wellcome to PW";
+System.out.println("length of string using length() method is:" + str.length());
+}
+}
+//output: Length of string using length() method is 26
+
+
