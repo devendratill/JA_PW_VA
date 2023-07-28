@@ -36,7 +36,7 @@ Properties of Anonymous Arrays:
 
 1.We can create an array without a name. Such types of nameless arrays are called anonymous arrays.
 2.The main purpose of an anonymous array is just for instant use (just for one-time usage).
-3.An anonymous array is passed as an argument of a method.
+3.An anonymous array is passed as an argument of a method..
 
 Example-
 class Test {
