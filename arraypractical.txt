@@ -1,0 +1,138 @@
+1.Write a program to demonstrate method overloading with 3 different parameters ?
+->>
+//____________________________________Method Overloading ________________________________________
+
+/**
+ * sample
+ */
+class Calci {
+    public int Arithmatic(int a, int b, int c) {
+        int result = a + b + c;
+        return result;
+    }
+
+    public int Arithmatic(int a, int b) {
+        int result2 = a * b;
+        return result2;
+    }
+
+    public int Arithmatic1(int i, int j) {
+        int result3 = i / j;
+        return result3;
+    }
+
+}
+
+
+public class sample {
+    public static void main(String[] args) {
+
+        Calci obj = new Calci();
+        int result = obj.Arithmatic(4, 5, 7);
+        int result2 = obj.Arithmatic(4, 5);
+        int result3 = obj.Arithmatic1(500, 5);
+
+        System.out.println(result + " Addition");
+        System.out.println(result2 + " Multiplication");
+        System.out.println(result3 + " Division");
+
+    }
+
+}
+
+
+
+2.Write a java program to Calculate the sum of all elements in an integer array?
+->>
+//_______________________________________Addition of array element______________________________________________
+class Calc {
+
+    public int add(int nums[]) {
+        int result = 0;
+        for (int n : nums) {
+            result = n + result;
+        }
+        return result;
+    }
+}
+
+public class sample {
+
+    public static void main(String[] args) {
+        Calc obj = new Calc();
+        int nums[]={5,45,46,56,533}; 
+    
+        int result = obj.add(nums);
+        System.out.println(result);
+    }
+}
+
+
+3.Write a java program to print an entire array?
+->>
+
+public class sample {
+
+    public static void main(String[] args) {
+        int arr[][]={
+            {5,4},
+            {6,5},
+            {8,9},
+            {9,10,11,12}
+        };
+
+for(int n[]:arr)
+{
+    for(int c:n)
+    {
+        System.out.print(c+" ");
+    }
+    System.out.println();
+
+}
+
+    }
+}
+
+
+4.Write a java program to find the index of specific element in an integer array ?
+->>
+import java.util.Scanner;
+
+public class aa1 
+{
+    public static void main(String[] args) {
+        int a[] = { 2, 3, 4, 5, 6,56,32 };
+        Scanner s = new Scanner(System.in);
+        System.out.println("please Enter any one of the element from array :");
+        int value = s.nextInt();
+        for (int i = 0; i <a.length; i++)
+        {
+            if (a[i] == value)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+5.Write a program to create an object of an class which contains a method and call that class method in main method.
+->>
+ class Calc{
+    public int divide(int a,int b){
+        int result=a/b;
+        return result;
+    }
+ }
+
+
+public class sample {
+
+    public static void main(String[] args) {
+        Calc obj =new Calc();
+        int result = obj.divide(1000,5);
+        System.out.println(result);
+
+    }
+}
+//_______________________________________________________________END_______________________________________________________________
