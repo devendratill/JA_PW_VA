@@ -1,0 +1,119 @@
+                                              _______Inheritance & Polymorphism_______
+
+
+1.What is inheritance in java?
+->>
+A technique of creating new class By Using exicsting class functionality is called in heritance in java.
+In other words, inheritance is the process where a child class aquires all the properties and behaviours 
+of the parent class.
+
+2.What is super class and subclass?
+->>
+A class from where a subclass inherites features is called super class.It is also called base class or parent class.
+A class that inherites all the members (Fields, methods, and nested classes) From another class is called a subclass
+it is also called a derived class,child class or extended class.
+
+3.How is inheritance implemented / achieved in java?
+->>
+Inheritance can be implemented or achieved by using two keyword :
+extends:extends is a keyword that is used for developing inheritance between two classes and two interfaces.
+implements: keyword is used for developing the inheritance between a class and interface. 
+
+4.what is polymorphism?
+->>
+Polymorphism in oop is ablility of an entity to take a several forms.in other word it refers to an ability of an object
+(or a refrence to an object ) to take a different form of an objects.it allows a common data gathering message to be sent to each class
+polymorphism encourages what is called extendibility Which means an object or class have its uses extended.
+
+5.Difference between method overloading and method overridding ?
+->>
+
+                                    Overidding                                                                              Overloading 
+
+                       1.implements runtime polymorphism							1.implements compile time polymorphism
+
+2.The method call is deteremine at runtime base on the object type  						2.method call is determined at compile time 
+
+3.Occurs between superclass and subclass									3.Occurs between the methods in the same class
+
+4.Have the same signature (name and method arguments)								4.Have a same name but the parameters are different 
+
+5.on error,the effect will be visible at runtime 								5. on error , it can be caught at compile time 
+
+
+6.What is an abstraction Explained with an example ?
+->>
+Abstraction is nothing but the quality of dealing with ideas rather than events. it basically deal with hiding 
+the internal details and showing essential things to the user.
+abstract class sports {  //abstract class
+abstract void jump(); //abstract method 
+}
+
+7.What is the differance between abstract method and final method in java ? explain with example 
+->>
+The abstract method is incomeplete while the final method is regarded as complete.the only way to use abstract method is 
+by overridding it, but you can not override a final method in java.
+
+8.What is the final class in java?
+->>
+A class declared with the final keyword is known as the final class. A final classes cannot be inherited by the subclasses.
+by using the final class, we can restricted the inheritance of the class. we can create a class as a final class only if it is complete in nature,
+which means it must not be abstract class. In java all the wrapper class are final classes like String,integer etc.
+if we try to inherite a final class, then the compiler throws an error  at compilation time. we can't create class as immutable without the final class.
+
+final class parentclass{
+	void showdata(){
+		System.out.println("This is method of final parent class");
+			}
+}
+//It will throws compilation error 
+class childclass extends parentclass{
+			void showdata(){
+		System.out.println("This is method of child class");
+					}
+class mainclass{
+public static void main(String arg[])
+{
+parentclass obj=new childclass();
+obj.showdata();
+}
+}
+
+9.difference between abstraction and encapsulation?
+->>
+			Abstraction												Encapsulation
+
+1.Abstraction is a feature of OOPs  that								1.Encapsulation is also a feature of OOPs.it hides the code and data into 
+hide unnecessary details but show the essantial information						  Single entity or so that the data is protected from the outside world.
+
+2.it solve an isue at the design level 									2.it solve an issue at implementation level.
+
+3.it focuses on to the external lookout.								3.it focuses on the internal working .
+
+4.it can be implemented using abstract classes 								4.it can be implemented by using the access modifier(private,public,protected)
+and inter faces.
+
+5.it is the process of gaining information.								5.it is the process of containing information
+
+6.In abstraction, we use abstract classes and interface to 						6.We use the getter and setter method to hide data.
+hide the code complexities.
+
+7.the objects are incapsulated that helps to perform							7.The object need not to abstract that result in encapsulation.
+abstraction.
+
+
+10.The difference between runtime and compile time polymorphism explain with an example 
+->>
+		Compile Time Polymorphism	                                                           	Run time Polymorphism                      
+
+1.In Compile time Polymorphism, the call is resolved by the compiler.				1.In Run time Polymorphism, the call is not resolved by the compiler.
+
+2.It is also known as Static binding, Early binding and overloading as well.			2.It is also known as Dynamic binding, Late binding and overriding as well.
+
+3.Method overloading is the compile-time polymorphism where more than one 			3.Method overriding is the runtime polymorphism having the same method with same paramet
+methods share the same name with different parameters or signature 				 but associated withcompared, different classes.	
+and different return type.
+
+4.Inheritance is not involved. 									4.Inheritance is involved.
+
+5.Compile time polymorphism is less flexible as all things execute at compile time.		5.Run time polymorphism is more flexible as all things execute at run time.
