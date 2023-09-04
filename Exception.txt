@@ -1,0 +1,166 @@
+______________________________________________________________Exception______________________________________________ 
+
+
+1.Explain the different type of Errors in Java ?
+->>
+In any programing language we categorise errors in two types 
+1.Syntax error / CompileTime Mistakes 
+2.Logical error / Runtime Mistake.
+
+Syntax error/compile time Mistake
+1.It reffers to mistake done by programmer with respect to Syntax.
+2.These mistake are identified by the compiler,"So we sayit as compiletime mistake".   
+
+Logical Error / Runtime Mistake 
+1.It reffers to the Mistake done by the programmer in term of writing a logic.
+2.These mistake is identified by the jvm during the excution of program.so we say it as" Runtime Mistake".
+
+
+2.What is an exeption in java ?
+->>
+An unwanted /expected event that disturbs the normal flow of the execution of a programe is called "Exeption handling".
+i>The main objective of exeption handling is to handle the exeption.
+ii>It is availble for graceful termination of program.
+
+3.How can you handle the exeptions in java? Explain with an example .
+->>
+Exeption handling can be performed using:
+try:The set or statements or code which require monitoring for an exeption is kept under this block.
+catch:This block catches all the exeption that we trapped in the try block.
+finally:This block is always performed irrespective of the catching of exeption in the try block or catch block.
+Example:
+
+ class sample 
+
+           {
+
+                     public static void main(String args[]) 
+
+                     {
+
+                     try
+
+                     {
+
+                                System.out.print("Hello" + " " + 1 / 0);
+
+                     }
+
+                     catch(ArithmeticException e) 
+
+                      {
+
+                               System.out.print("World");           
+
+                     }
+           }
+    }
+
+
+4.Why do we need exception handling in java ?
+->>
+If there is no try and catch block while an exception occurs, the program will terminate.The exception handling ensures the smooth running of the program
+with out program termination.
+
+5.What is the difference between exception and error in java?
+->>
+Errors typically happen while an application is running. For Instance, Out of memory occurs in case the jvm runs out of memory.
+On the other hand, exceptions are mainly caused by the application.for instance , Null poniter exception happens when the app tries to get through 
+the null object.
+
+6.Name the diffrent type of exception in java.
+->>
+Based on the handling by jvm, There are typically two types of exception in java :
+Checked: Occurs during the compilation.here,the compiler checks whether the exception is handled and throws an error accordingly.
+
+Unchecked:Occurs during program execution. these are not detectable during the compilation process.
+
+7.Can we just use try instead of finally and catch blocks?Give an Example.
+->>
+No, doing so will show the compilation error. Catch or finally block must always accompany try block.we can remove either finally block or catch block, but never both.
+
+
+
+_______________________________________LAMBDA EXPRESSION_______________________________________________
+
+1.What is the lambda expression of java 8?
+->>
+As its name suggests it's an exepression it allows you to write more succinct code in java 8. for example 
+:(a,b)-> a+b is a lambda expression (look for that arrow ->).
+Which is Equal to following code:
+public int value(int a, int b)
+{
+return a+b;
+}
+
+it's also called anonymous function because you are essentially writing the code you write inthe function but without name.
+
+2.Can you pass the lambda expressions to a method? When?
+->Yes you can pass a lambda expression to a method provided it is expecting a funtional interface.
+for example , if a method is accepting a runnable, comparable or comparator then you pass a lambda expression 
+to it all bacause all these are funtional interface in java 8.
+
+3.What is the functional interface in java 8?
+->
+A functional interface in java 8 is an interface with a single abstract method.for example comparator which has just 
+one abstract method called compare() or runnable which has just one abstract method called run().there are many more general purpose.
+funtional interfaces introduced in JDK on java.util.function package.they are also annoted with @functionalinterface but that's optional.
+
+4.What is the benefit of lambda expression in java 8?
+->
+The main benefit of lambda exprssion in java 8 is that it's easier to pass a code block to a method.
+Earlier, the only way to do this was wrapping the code inside an anonymous class, Which requires a lot of boilerplate code.
+
+5.Is it mandatory for a lambda expression to have parameters?
+->
+No, it's mandatory for a lambda expression to have parameters, you can define a lamda expression without parameters as shown below:
+()->System.out.println("Lambdas without parameters");
+you can pass this code to any method which accepts a funtional interface.
+
+__________________________________________________Interface___________________________________________________________
+
+1.What is an interface in java?
+->>
+An interface in java is a mechanism that is used to achieve complete abstraction.It is basically a kind of class that contains only constants
+and abstract methods.
+
+2.Which modifiers are allowed for methods in an interface?Explain with an example
+->>
+Only abstract and public modifiers are allowed for methods in interfaces.
+
+3.What is the use of interface in java ?
+->
+There are many reasons to use interfaces in java. they are as follows:
+a)An interface is used to acheive full abstraction.
+b)Using interface is the bestway to expose our project's API to some other project.
+c)programer use interfaces to customise features of software differently for different object.
+d)By using interface, we can achieve the functionality of multiple inheritance.
+
+4.What is difference between abstract class and interface in java?
+
+			Abstract class 												Interface
+
+1.Abstract class can have abstract and non-abstract methods.				1.interface can only have abstract method.since java 8,It can have default and static methods also.
+
+2.abstract class doesn't support multiple inheritance.					2.Interface supports multiple inheritance.
+
+3.abstract class can have final,non-final,static & Non-static variables			3.Interface has only static and final variables.
+
+4.Abstract class can only provide the implementation of interface.			4.interface can't provide the implementation of abstract class.
+
+5.The abstract keyword is used to declare abstract class.				5.The interface keyword is used to declare the interface.
+
+6.An abstract class can extend another java class and implement 			6.An interface can extend another java interface only.
+multiple java interfaces.
+
+7.An abstract class can be extended using using the keyword "extends".			7.An interface can be implemented using using the keyword "implements".
+
+8.A java abstract class can have class members like private ,				8.The member of a java interface are public by default.
+proteected,etc.
+
+9.ex-											9.ex-
+public abstract class shape{									public interface drawable{
+
+public abstract void draw();									void draw();
+
+}												}
