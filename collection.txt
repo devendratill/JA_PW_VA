@@ -1,0 +1,107 @@
+_________________________________________Collection____________________________________
+
+1.What is the collection framework in java ?
+->
+Collection Framework is a combination of classes and interface, which is used to store and manipulate the data in the form of objects.
+it's provided various classes such as ArrayList,Vector stack and Hashset, etc. and interfaces such as List,Queue, Set,etc for this purpose.
+
+2.What is difference between Arraylist and LinkedList?
+->
+		ArrayList													LinkedList
+
+1.ArraList uses a dynamic array.										1.LinkedList uses a doubly LinkList.
+
+2.ArrayList is not efficient for manipulation									2.LinkedList is efficient for manipulation.
+because too much is required.
+
+3.ArrayList is better to store and fetch data.									3.LinkedList is better to manipulate data.
+
+4.ArrayList provides random access.										4.LinkedList does not provide random access.
+
+5.ArrayList takes less memory overhead as									5.LinkedList takes more memory overhead, as it store the object
+it store only object.												  as well as address of that object.
+
+
+3.What is the difference between Iterator and ListIterator?
+->
+
+					Iterator 									ListIterator
+
+1.The iterator traverses the elements in the Forward 							1.ListIteretor traverese the elements backward and forward direction both.
+direction only.
+
+2.The iterator can be used in List, Set and Queue.							2.ListIterator can be used in list only.
+
+3.The Iterator can only perform a remove operation							3.ListIterator can perform? add? remove? and? set? operation while travering the 
+while traversing the collection.									 collection.
+
+
+
+
+4. What is the difference between iterator and Enumeration?
+->
+ 			Iterator 											Enumaration
+1. The iterator can traverse lagacy and non-lagacy element.						1.Enumaration can traverse only lagacy elements.
+
+2.The iterator is fail-fast.										2.Enumaration is not fails fast.
+
+3.The iterator is slower than Enumaration.								3.Enumaration is faster than iterator.
+
+4.The iterator can perform remove operation while 							4.The Enumaration can perform only traverse operations on the collection.
+traversing the collection.
+
+
+5.What is the difference between List and Set?
+-> 
+The List and Set both extend the co;;ection interface.However,Thereare some differences between between two which are Listed below.
+
+i>the list can contain duplicate elements whereas Set includes unique items.
+ii>The list is an ordered collection which maintains insertion order whereas Set is an unorderd collection which does not preserve insertion order.
+iii>The List insertion contains a single lagacy class which is vector class whereas Set interface does not have any lagacy class.
+iv>The list interface can allow a number of a null values whereas set interface only allows a single null value.
+
+6.What is the difference between HashSet and TreeSet?
+->
+Both HashSet and TreeSet are the implementation of Set interface in java. but they have some differences in term of their properties and usage.
+
+i>Ordering: Hashset is an unorderd collection of elements,while treeset is a sorted Set of elements based on their natural order or a custom comparator.
+ii>Duplication:Hashset Does not allow duplicate elements, while treeset does not allow duplicates as well.
+iii>Implimention:Hashset is implement using a hashtable, while treeset is implemented using self balancing binary search tree(red-black tree).
+iv>performance:HashSet has constant-time complexity O(1)for adding removing and testing the existance of an element.while treeset has logarithmic time complexity
+O(log n) for these operations due to the self balancing property.
+v>Memory usage:HashSet uses less memory than TreeSet because it only stores the elements,while TreeSet stores additional information for maintaing the order.
+vi>Iteration:HashSet provides no garantees regarding the order of iteration, while treeset garantees the elements iterated in sorted order.
+vii>Usage:HashSet is suitable when elements needs to be stored or accessed in specific order.
+
+7.What is the difference between Array and ArrayList ?
+->
+i>Type:Arrays can store elements of premitive datatypes as wellas objects,while ArrayList can only stores the objects.
+i>Size: the size of an Array is fixed once it is created,while the size of an ArrayList can be dynamically increases or decreases by adding removing elements.
+i>Mutability:Arrays are mutable, meaning that you can modify the element in an array after it has been created.ArrayList is also mutable , but the only way to modify it is by adding,
+removing and modifying the elements.
+i>performance:Arrays have better performance than ArrayLists for certain operations,such as accessing elements by index, because they are implemented as a continuous block of memory.
+ArrayList on the other hand , use dynamic memory allocation and are implemented as a dynamic array, which may result in more memory overhead and slower performance for certain operation.
+i>Method:Array have a limited set of methods compared to ArrayList's.which provides more methods for mnupulating the collection,such as adding , removing and sorting elements.
+i>Initialization:Arrays can be initialize with values at the time of creation, while the ArrayList requries the use of methods to add elements to the collection.
+i>compatibility:Arrays are compatible with traditional for loop and can be easily pass to the other methods,while arraylist requires the use of a special for each loop and may require 
+more code to be pass to other methods.
+
+8.What is a Map in java?
+->A Map is collection in java that stores data as key value pairs,where each key is unique.
+
+9.What are the commonly used implementations of Map in java ?
+->
+The commonly used implementetions of Map in java are HashMap,TreeMap,LinkedHashMap,and ConcurrentHashMap.
+
+10.What is the difference between HashMap and TreeMap?
+->
+HashMap is an unordered collection that uses hashing to store the key value pairs, while tree map is a sorted collection that stores the key value pairs in sorted order 
+based on the natural order of the key or custom comparator.
+
+11.how do you check if a key exists in a Map in java?
+->
+we can check if a key exists in a map in java using a containsKey() method or the get() method. A containsKey method returns a boolean value 
+indicating whether a map contains the specified key, while the get() method returns the value associated with the specified key,or null if the key is not present in the Map.
+
+
+
