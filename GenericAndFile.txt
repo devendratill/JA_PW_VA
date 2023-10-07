@@ -1,0 +1,76 @@
+_________________________________________________________Generics In Java --
+Q.1What are generics in java?
+->Generics in java are used to provide type safety and reduce code redundancy by allowing the use of generic types.It allows classes,methods and interfaces,
+to be written generically, Without specifying the type of data being used.
+
+Q.2What are the benefits of using generics in java ?
+->The benefits of using generics in java are:
+Type Safety 
+Code reusability
+Improved readability
+Reduced code redundancy
+improved performance
+
+Q.3What is a generic class in java ?
+->A Generic class in java is a class that can work with different types of data. It is defined using a type parameter
+enclosed in angle brackets,which represent the type of data being used.
+
+Q.4 What is a Type parameter in java generics?
+->A type parameter in java generics is a placeholder for the type of data that is used by a generic class or method.
+It is defined using single uppercase letter enclosed in angle brackets such as <T> or <E>
+
+Q.5What is a Generics method in Java?
+->A generic mehtod in Java is a method That can works with different type of data.it's define using a type parameter
+enclosed in angle brackets, Which represents the type of data being used 
+
+Q.6What is the Difference between ArrayList and ArrayList<T>?
+->ArrayList is non-generic class,While ArrayList<T> is generic class. ArrayList<T> provides type safety, as it can only store elements
+of the specified type ,whereas ArrayList can store any type of elements.
+
+
+
+______________________________________________________________File Handling in Java
+Q.What is input and Output Stream in java ?
+->A stream can be defined as a sequence of data. The InputStream is used to read data from a source and 
+The OutputStream is used for writing data to a destination.
+
+Q.What are the methods of OutputStream ?
+->1.write():write the specified byte to the output stream.
+2.write(byte[] array):Writes the bytes from specified array to the output stream.
+3.flush():forces to write all data present in OutputStream to the destination.
+4.close():closes the Output Stream.
+
+Q.What is Serialization in Java ?
+->Serialization is the process of converting and object into a stream of bytes to transfer it over a network or to store it 
+in a file or database.In Java, serialization is done by implementing the Serializable interface.
+
+Q.What is Serializable interface in Java?
+->The Serializable interface in java is a marker interface that has no methods.It is used to mark classes that can be serialized, 
+meaning their Object instances can be converted into a stream of bytes.
+
+Q.Whata is Deserialization in Java?
+->Deserialization is the process of converting a stream of bytes back into an object instance.
+This is done after an object has been serialize.
+
+Q.How is Serialization achieved in Java?
+->Serialization is achieved in Java by implementing the serializable interface.When an Object is Serialized,it's state is converted into a 
+stream of bytes,which can then be transfered over a network or stored in a file or database.
+
+Q.How is Deserialization achieved in Java?
+->Deserialization is achieved in Java by reading a stream of bytes and using them to recreate the original object instance.
+This is done by calling the readObject() method of an ObjectInputStream instance.
+
+Q.How can you avoid certain member variables of class from getting Serialized?
+->Mark member variables as static or transient and those member variables will no more be a part of Serialization.
+
+Q.What classes are available in the Java IO File classes API?
+->The following classes available in Java IO API and are important to work with files in Java.
+
+File 
+RandomAccessFile 
+FileInputStream 
+FileReader
+FileOutputStream
+FlieWriter
+
+
