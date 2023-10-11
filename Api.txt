@@ -1,0 +1,136 @@
+
+
+Q.Program to display current date and time in java ?
+->
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class deva{
+  public static void main(String[] args) {
+    LocalDate date=LocalDate.now();
+    System.out.println(date);
+    LocalTime time=LocalTime.now();
+    System.out.println(time);
+
+   //Using SQL pacakage
+    java.util.Date dt11=new java.util.Date();
+    long TimeInMs=dt11.getTime();
+    java.sql.Date dt=new java.sql.Date(TimeInMs);
+    System.out.println(dt);
+
+    //One by One
+    int day=date.getDayOfMonth();
+    int month=date.getMonthValue();
+    int year=date.getYear();
+    System.out.println(day+"/"+month+"/"+year);
+
+  }
+}
+
+Q.Write a program to convert a date to a String in the format"MM/dd/yy"?
+->
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import javax.swing.text.DateFormatter;
+
+
+public class deva{
+  public static void main(String[] args) {
+    LocalDate date=LocalDate.of(2023,4,24);
+    DateTimeFormatter formatter=DateTimeFormatter.ofPattern("MM/dd/yy");
+    String formattedDate= date.format(formatter);
+
+    System.out.println(formattedDate);
+
+  }
+
+Q.What is the difference between the collections and streams? Explain with example .
+->
+					STREAMS 									COLLECTIONS
+
+1.It's doesn't store data it operates on 							1.It stores /holds all the data that the data structure currently has
+Source data structure i.e collection								in a particular data structure like set,List or map.
+
+2.They use functional interface like lambda 							2.They don't use functional interfaces.
+which makes good fit for programming languages.
+
+3.JAva streams are consumable i.e to traverse the stream,					3.they are non consumable i.e; can be traversable multiple times 
+it's need to be created every time. 								without creating it again.
+
+4.Java streams support both sequential and parallel						4.It's support parallel processing and parallel processing can be very helpful
+processing.											in achieving high performance.
+
+5.Strams are iterated internally by just metioning 						5.Collections are iterated externally using loops.
+the operations.
+
+
+Collection ex-
+import java.io.*;
+import java.util.*;
+
+public class deva {
+  public static void main(String[] args) {
+
+    List<String> al = Arrays.asList("Accenture", "Microsoft", "Adobe");
+    Comparator<String> com = (String o1, String o2) -> o1.compareTo(o2);
+    Collections.sort(al, com);
+    for (String name : al) {
+      System.out.println(name);
+    }
+
+  }
+}
+
+Stream ex-
+import java.io.*;
+import java.util.*;
+
+public class deva {
+  public static void main(String[] args) {
+
+    List<String> List = Arrays.asList("Google", "Microsoft", "Adobe","cognizant");
+    List.stream().sorted().forEach(System.out::println);
+
+  }
+}
+
+Q.What is enums in java ? Explain with an example
+->We can use enum to define the group of name constants.Enums are use to represent a collection of related constants that have a common purpose.
+Each constant in an enum is an instance of the enum type, and they are typically defined as public static final fields.
+Here's an example of how to define an enum in java :
+
+import java.io.*;
+import java.util.*;
+
+import your.package.name.EnumDemo.WeekDays;
+
+class EnumDemo {
+    public enum WeekDays {
+        MON, TUE, WED, THU, FRI, SAT, SUN;
+    }
+}
+
+public class Api {
+    public static void main(String[] args) {
+
+        for (WeekDays w : WeekDays.values())
+            System.out.println(w);
+    }
+}
+
+here we define an enum called "WeekDays" that represent the day of the week.the enum has seven constants.
+each representng the day of week. the constants are define in all uppercase latters by convention.
+
+Q.What are inbuilt Annotation in Java?
+->Built-in Annotation in java 
+@override
+@Deprecated
+@SuppressWarnings
+@Functionalinterfaces
+@Retention
+@Target
+@Documented
+@Inherited
+This built-in Annotations in java are used to provide additional information to the java compiler and other tools.They help to improve code readability,maintainability,and safety 
+by enforcing specific rules and behaiviour in java code.
